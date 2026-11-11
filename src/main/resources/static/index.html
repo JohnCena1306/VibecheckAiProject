@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vibecheck</title>
+</head>
+<body>
+
+<h1>Vibecheck</h1>
+
+<form id="form">
+  <label for="genre">What do you want to listen to?</label>
+  <select id="genre">
+    <option value="POP">Pop</option>
+    <option value="RNB">R&B</option>
+    <option value="RAP">Rap</option>
+    <option value="ELECTRONIC">Electronic</option>
+    <option value="JAZZ">Jazz</option>
+    <option value="INDIE">Indie</option>
+    <option value="COUNTRY">Country</option>
+    <option value="ROCK">Rock</option>
+    <option value="METAL">Metal</option>
+  </select>
+
+  <label for="mood">Whats the vibe right now?</label>
+  <select id="mood">
+    <option value="HAPPY">Happy</option>
+    <option value="SAD">Sad</option>
+    <option value="CHILL">Chill</option>
+    <option value="ANGRY">Angry</option>
+    <option value="ENERGETIC">Energetic</option>
+    <option value="ROMANTIC">Romantic</option>
+    <option value="NOSTALGIC">Nostalgic</option>
+    <option value="FOCUSED">Focused</option>
+  </select>
+
+  <label for="artists">Who have you been listening to lately?</label>
+  <input id="artists" placeholder="Name an artist or band you like" required>
+
+  <button type="submit">Find music</button>
+</form>
+
+<div id="result"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
