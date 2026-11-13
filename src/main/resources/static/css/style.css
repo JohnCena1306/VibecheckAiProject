@@ -1,0 +1,137 @@
+/* Side */
+
+body {
+    margin: 0;
+    background: #EDEDFA;
+    color: #1B1530;
+    font-family: Inter, system-ui, sans-serif;
+}
+
+h1, form, #result {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 24px;
+}
+
+h1 {
+    font-size: 18px;
+    padding-top: 48px;
+    margin-bottom: 56px;
+    letter-spacing: -0.02em;
+}
+
+/* Sætning */
+
+.sentence {
+    font-size: 44px;
+    line-height: 1.4;
+    font-weight: 500;
+    margin: 0 0 32px 0;
+}
+
+.sentence select,
+.sentence input {
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #1B1530;
+    padding: 0 4px;
+    transition: border-color 0.15s, background 0.15s;
+}
+
+.sentence select:focus,
+.sentence input:focus {
+    outline: none;
+    border-bottom-color: #8B6FD9;
+}
+
+.sentence select {
+    cursor: pointer;
+}
+
+.sentence input {
+    width: 460px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.sentence select:hover,
+.sentence input:hover {
+    border-bottom-color: #8B6FD9;
+    background: #DFDBF0;
+}
+
+.hidden-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.sentence select:invalid {
+    color: #8A83A3;
+}
+
+.sentence option {
+    font-size: 18px;
+    color: #1B1530;
+}
+
+/* Buutton */
+
+button {
+    padding: 16px 32px;
+    border: none;
+    border-radius: 999px;
+    background: #1B1530;
+    color: white;
+    font: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Sange */
+
+#result {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.song {
+    background: #DFDBF0;
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 8px;
+}
+
+.song-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0;
+}
+
+.song-reason {
+    color: #4E4668;
+    margin: 4px 0 12px 0;
+}
+
+.song-link {
+    display: inline-block;
+    padding: 8px 14px;
+    margin-right: 8px;
+    border: 1.5px solid #1B1530;
+    border-radius: 999px;
+    color: #1B1530;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.15s, color 0.15s;
+}
+
+.song-link:hover {
+    background: #1B1530;
+    color: white;
+}
