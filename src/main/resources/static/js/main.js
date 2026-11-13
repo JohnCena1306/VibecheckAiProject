@@ -32,6 +32,12 @@ async function getRecommendations(event){
     }
 
     const songs = await response.json();
+
+    if (songs.length === 0) {
+        result.textContent = "Couldn't find any songs this time. Try again!";
+        return;
+    }
+
     result.textContent = "";
     songs.forEach(insertSong);
 }
