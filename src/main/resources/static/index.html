@@ -2,42 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Vibecheck</title>
+    <title>vibecheck</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<h1>Vibecheck</h1>
+<h1>vibecheck</h1>
 
 <form id="form">
-  <label for="genre">What do you want to listen to?</label>
-  <select id="genre">
-    <option value="POP">Pop</option>
-    <option value="RNB">R&B</option>
-    <option value="RAP">Rap</option>
-    <option value="ELECTRONIC">Electronic</option>
-    <option value="JAZZ">Jazz</option>
-    <option value="INDIE">Indie</option>
-    <option value="COUNTRY">Country</option>
-    <option value="ROCK">Rock</option>
-    <option value="METAL">Metal</option>
-  </select>
 
-  <label for="mood">Whats the vibe right now?</label>
-  <select id="mood">
-    <option value="HAPPY">Happy</option>
-    <option value="SAD">Sad</option>
-    <option value="CHILL">Chill</option>
-    <option value="ANGRY">Angry</option>
-    <option value="ENERGETIC">Energetic</option>
-    <option value="ROMANTIC">Romantic</option>
-    <option value="NOSTALGIC">Nostalgic</option>
-    <option value="FOCUSED">Focused</option>
-  </select>
+    <p class="sentence">Play me some
 
-  <label for="artists">Who have you been listening to lately?</label>
-  <input id="artists" placeholder="Name an artist or band you like" required>
+        <label for="genre" class="hidden-label">genre</label>
+        <select id="genre" required>
+            <option value="" disabled selected hidden>genre</option>
+            <option value="POP">pop</option>
+            <option value="RNB">r&b</option>
+            <option value="RAP">rap</option>
+            <option value="ELECTRONIC">electronic</option>
+            <option value="JAZZ">jazz</option>
+            <option value="INDIE">indie</option>
+            <option value="COUNTRY">country</option>
+            <option value="ROCK">rock</option>
+            <option value="METAL">metal</option>
+        </select>
 
-  <button type="submit">Find music</button>
+        that feels
+
+        <label for="mood" class="hidden-label">mood</label>
+        <select id="mood" required>
+            <option value="" disabled selected hidden>mood</option>
+            <option value="HAPPY">happy</option>
+            <option value="SAD">sad</option>
+            <option value="CHILL">chill</option>
+            <option value="ANGRY">angry</option>
+            <option value="ENERGETIC">energetic</option>
+            <option value="ROMANTIC">romantic</option>
+            <option value="NOSTALGIC">nostalgic</option>
+            <option value="FOCUSED">focused</option>
+        </select>,
+
+        lately I've been into
+
+        <label for="artists" class="hidden-label">Artists you have been listening to</label>
+        <input id="artists" placeholder="this artist or band" required>
+    </p>
+
+    <button type="submit">vibecheck it</button>
 </form>
 
 <div id="result"></div>
